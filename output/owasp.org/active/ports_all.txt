@@ -1,0 +1,21 @@
+# Nmap 7.94SVN scan initiated Tue Dec 23 10:49:55 2025 as: nmap -p- --min-rate 1000 -T4 -oN output/owasp.org/active/ports_all.txt owasp.org
+Nmap scan report for owasp.org (172.66.157.115)
+Host is up (0.11s latency).
+Other addresses for owasp.org (not scanned): 2606:4700:8d77:f23a:8cd7:d91:7511:414f 104.20.44.163
+Not shown: 65522 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+2052/tcp open  clearvisn
+2053/tcp open  knetd
+2082/tcp open  infowave
+2083/tcp open  radsec
+2086/tcp open  gnunet
+2087/tcp open  eli
+2095/tcp open  nbx-ser
+2096/tcp open  nbx-dir
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+8880/tcp open  cddbp-alt
+
+# Nmap done at Tue Dec 23 10:52:57 2025 -- 1 IP address (1 host up) scanned in 182.09 seconds

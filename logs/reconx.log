@@ -1,0 +1,152 @@
+[2025-12-17 13:19:42] Target set to: example.com
+[2025-12-17 13:19:42] Passive recon selected
+[2025-12-17 13:29:29] Target set to: example.com
+[2025-12-17 13:29:29] [PASSIVE] Starting passive reconnaissance
+[2025-12-17 13:29:29] [PASSIVE] WHOIS lookup
+[2025-12-17 13:29:31] [PASSIVE] Subdomain discovery (subfinder)
+[2025-12-17 13:29:31] [PASSIVE] Subdomain discovery (amass passive)
+[2025-12-17 13:29:31] [PASSIVE] Certificate transparency (crt.sh)
+[2025-12-17 13:29:34] [PASSIVE] Found 5 unique subdomains
+[2025-12-17 13:31:00] Target set to: example.com
+[2025-12-17 13:31:00] [PASSIVE] Starting passive reconnaissance
+[2025-12-17 13:31:00] [PASSIVE] WHOIS lookup
+[2025-12-17 13:31:03] [PASSIVE] Subdomain discovery (subfinder)
+[2025-12-17 13:31:03] [PASSIVE] Subdomain discovery (amass passive)
+[2025-12-17 13:31:03] [PASSIVE] Certificate transparency (crt.sh)
+[2025-12-17 13:31:04] [PASSIVE] Found 5 unique subdomains
+[2025-12-17 13:43:20] Target set to: example.com
+[2025-12-17 13:43:20] [PASSIVE] Starting passive reconnaissance
+[2025-12-17 13:43:20] [PASSIVE] WHOIS lookup
+[2025-12-17 13:44:03] [PASSIVE] Subdomain discovery (subfinder)
+[2025-12-17 13:44:19] [PASSIVE] Subdomain discovery (amass passive)
+[2025-12-17 13:46:14] [PASSIVE] Certificate transparency (crt.sh)
+[2025-12-17 13:46:17] [PASSIVE] Found 22248 unique subdomains
+[2025-12-18 14:05:43] Target set to: example.com
+[2025-12-18 14:05:43] [PASSIVE] Starting passive reconnaissance
+[2025-12-18 14:05:43] [PASSIVE] WHOIS lookup
+[2025-12-18 14:05:47] [PASSIVE] Subdomain discovery (subfinder)
+[2025-12-18 14:05:53] [PASSIVE] Subdomain discovery (amass passive)
+[2025-12-18 14:14:53] [PASSIVE] Certificate transparency (crt.sh)
+[2025-12-18 14:14:55] [PASSIVE] Found 22252 unique subdomains
+[2025-12-18 14:15:14] Target set to: google.com
+[2025-12-18 14:15:14] [PASSIVE] Starting passive reconnaissance
+[2025-12-18 14:15:14] [PASSIVE] WHOIS lookup
+[2025-12-18 14:16:08] [PASSIVE] Subdomain discovery (subfinder)
+[2025-12-18 14:19:41] Target set to: example.com
+[2025-12-18 14:19:41] [DNS] Starting DNS reconnaissance
+[2025-12-18 14:19:41] [DNS] NS records
+[2025-12-18 14:19:42] [DNS] MX records
+[2025-12-18 14:19:42] [DNS] TXT records
+[2025-12-18 14:19:42] [DNS] A records
+[2025-12-18 14:19:42] [DNS] AAAA records
+[2025-12-18 14:19:42] [DNS] Attempting zone transfer (AXFR)
+[2025-12-18 14:24:53] Target set to: example.com
+[2025-12-18 14:24:53] [ACTIVE] Starting active reconnaissance
+[2025-12-18 14:24:53] [ACTIVE] Fast port discovery
+[2025-12-18 14:26:41] [ACTIVE] Open ports found: 80,443,2052,2053,2082,2083,2086,2087,2095,2096,8080,8443,8880
+[2025-12-18 14:26:41] [ACTIVE] Service enumeration
+[2025-12-18 14:33:10] [ACTIVE] Active reconnaissance completed
+[2025-12-18 14:39:16] Target set to: example.com
+[2025-12-18 14:39:16] [ENUM] Starting smart enumeration
+[2025-12-18 14:39:16] [ENUM] HTTP(S) detected → triggering web recon
+[2025-12-18 14:39:16] [WEB] Starting web reconnaissance
+[2025-12-18 14:39:19] [WEB] Web reconnaissance completed
+[2025-12-18 14:39:19] [ENUM] Enumeration completed
+[2025-12-18 14:42:25] Target set to: example.com
+[2025-12-18 14:42:25] [ENUM] Starting smart enumeration
+[2025-12-18 14:42:25] [ENUM] HTTP(S) detected → triggering web recon
+[2025-12-18 14:42:25] [WEB] Starting web reconnaissance
+[2025-12-18 14:42:27] [WEB] Directory brute-force (ffuf)
+[2025-12-18 14:42:29] [WEB] Web reconnaissance completed
+[2025-12-18 14:42:29] [ENUM] Enumeration completed
+[2025-12-18 14:44:11] Target set to: example.com
+[2025-12-18 14:44:11] [ENUM] Starting smart enumeration
+[2025-12-18 14:44:11] [ENUM] HTTP(S) detected → triggering web recon
+[2025-12-18 14:44:11] [WEB] Starting web reconnaissance
+[2025-12-18 14:44:11] [WEB] Detecting live web services (httpx)
+[2025-12-18 14:44:13] [WEB] Directory brute-force (ffuf)
+[2025-12-18 14:44:14] [WEB] Web reconnaissance completed
+[2025-12-18 14:44:14] [ENUM] Enumeration completed
+[2025-12-22 19:34:32] Target set to: example.com
+[2025-12-22 19:34:32] [VULN] Starting vulnerability discovery
+[2025-12-22 19:34:32] [VULN] Running nuclei (high & critical)
+[2025-12-22 19:34:32] [VULN] Vulnerability scan completed
+[2025-12-22 19:34:53] Target set to: example.com
+[2025-12-22 19:34:53] [VULN] Starting vulnerability discovery
+[2025-12-22 19:34:53] [VULN] nuclei not installed – skipping
+[2025-12-22 19:35:06] Target set to: example.com
+[2025-12-22 19:35:06] [VULN] Starting vulnerability discovery
+[2025-12-22 19:35:06] [VULN] nuclei not installed – skipping
+[2025-12-22 19:35:15] Target set to: example.com
+[2025-12-22 19:35:15] [VULN] Starting vulnerability discovery
+[2025-12-22 19:35:15] [VULN] Running nuclei (high & critical)
+[2025-12-22 19:35:15] [VULN] Vulnerability scan completed
+[2025-12-22 19:40:50] Target set to: example.com
+[2025-12-22 19:40:50] [VULN] Starting vulnerability discovery
+[2025-12-22 19:40:50] [VULN] Running nuclei (high & critical)
+[2025-12-22 19:41:13] [VULN] Vulnerability scan completed
+[2025-12-22 19:48:53] Target set to: example.com
+[2025-12-22 19:48:53] [REPORT] Generating report
+[2025-12-22 19:48:53] [REPORT] Report saved to output/example.com/report.md
+[2025-12-22 19:48:53] [REPORT] Generating report
+[2025-12-22 19:48:53] [REPORT] Report saved to output/example.com/report.md
+[2025-12-22 19:56:44] Target set to: example.com
+[2025-12-22 19:56:44] [FULL] Running full reconnaissance pipeline
+[2025-12-22 19:56:44] [PASSIVE] Starting passive reconnaissance
+[2025-12-22 19:56:44] [PASSIVE] WHOIS lookup
+[2025-12-22 19:56:48] [PASSIVE] Subdomain discovery (subfinder)
+[2025-12-22 19:56:55] [PASSIVE] Subdomain discovery (amass passive)
+[2025-12-22 20:17:09] Target set to: example.com
+[2025-12-22 20:17:58] Target set to: example.com
+[2025-12-22 20:25:30] Target set to: example.com
+[2025-12-22 20:25:31] [PASSIVE] Starting passive reconnaissance
+[2025-12-22 20:25:31] [PASSIVE] WHOIS
+[2025-12-22 20:26:40] [PASSIVE] Subfinder
+[2025-12-22 20:27:14] [PASSIVE] Amass (passive)
+[2025-12-22 20:28:20] [PASSIVE] crt.sh
+[2025-12-22 20:29:12] [PASSIVE] Passive recon completed
+[2025-12-22 20:29:51] Target set to: example.com
+[2025-12-22 20:29:51] [DNS] Starting DNS reconnaissance
+[2025-12-22 20:31:46] [DNS] DNS recon completed
+[2025-12-22 20:32:43] Target set to: example.com
+[2025-12-22 20:32:43] [ACTIVE] Starting active reconnaissance
+[2025-12-22 20:37:15] [ACTIVE] Active recon completed
+[2025-12-22 20:37:56] Target set to: example.com
+[2025-12-22 20:37:56] [ENUM] Starting smart enumeration
+[2025-12-22 20:37:56] [WEB] Starting web reconnaissance
+[2025-12-22 20:38:02] [WEB] Web recon completed
+[2025-12-22 20:38:02] [ENUM] Enumeration completed
+[2025-12-22 20:38:29] Target set to: example.com
+[2025-12-22 20:38:29] [VULN] Starting vulnerability discovery
+[2025-12-22 20:38:33] [VULN] Vulnerability scan completed
+[2025-12-22 20:38:54] Target set to: example.com
+[2025-12-22 20:38:54] [VULN] Starting vulnerability discovery
+[2025-12-22 20:39:39] Target set to: example.com
+[2025-12-22 20:39:39] [REPORT] Report generated
+[2025-12-22 20:40:02] Target set to: example.com
+[2025-12-22 20:40:02] [PASSIVE] Starting passive reconnaissance
+[2025-12-22 20:40:02] [PASSIVE] WHOIS
+[2025-12-22 20:40:18] [PASSIVE] crt.sh
+[2025-12-23 10:46:46] Target set to: owasp.org
+[2025-12-23 10:46:46] [PASSIVE] Starting passive reconnaissance
+[2025-12-23 10:46:46] [PASSIVE] WHOIS
+[2025-12-23 10:46:57] [PASSIVE] crt.sh
+[2025-12-23 10:48:14] [PASSIVE] Passive recon completed
+[2025-12-23 10:48:14] [DNS] Starting DNS reconnaissance
+[2025-12-23 10:49:55] [DNS] DNS recon completed
+[2025-12-23 10:49:55] [ACTIVE] Starting active reconnaissance
+[2025-12-23 10:56:42] [ACTIVE] Active recon completed
+[2025-12-23 10:56:42] [ENUM] Starting smart enumeration
+[2025-12-23 10:56:42] [WEB] Starting web reconnaissance
+[2025-12-23 10:56:46] [WEB] Web recon completed
+[2025-12-23 10:56:46] [ENUM] Enumeration completed
+[2025-12-23 10:56:46] [VULN] Starting vulnerability discovery
+[2025-12-23 10:56:46] [REPORT] Report generated
+[2025-12-24 15:56:05] Target set to: example.com
+[2025-12-24 15:56:05] [PASSIVE] Starting passive reconnaissance (parallel)
+[2025-12-24 15:58:00] Target set to: example.com
+[2025-12-24 15:58:00] [PASSIVE] Starting passive reconnaissance (parallel)
+[2025-12-24 15:59:53] [PASSIVE] Passive recon completed
+[2025-12-24 16:01:00] Target set to: example.com
+[2025-12-24 16:01:00] [PASSIVE] Starting passive reconnaissance (parallel)
+[2025-12-24 16:02:07] [PASSIVE] Passive recon completed

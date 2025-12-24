@@ -1,0 +1,2 @@
+west.ns.cloudflare.com.
+fay.ns.cloudflare.com.

@@ -1,0 +1,11 @@
+;; Connection to 2606:4700:50::adf5:3a73#53(2606:4700:50::adf5:3a73) for owasp.org failed: timed out.
+;; no servers could be reached
+;; Connection to 2606:4700:50::adf5:3a73#53(2606:4700:50::adf5:3a73) for owasp.org failed: timed out.
+;; no servers could be reached
+;; Connection to 2606:4700:50::adf5:3a73#53(2606:4700:50::adf5:3a73) for owasp.org failed: timed out.
+;; Connection to 2a06:98c1:50::ac40:2073#53(2a06:98c1:50::ac40:2073) for owasp.org failed: timed out.
+;; Connection to 2803:f800:50::6ca2:c073#53(2803:f800:50::6ca2:c073) for owasp.org failed: timed out.
+
+; <<>> DiG 9.18.41-1~deb12u1-Debian <<>> AXFR owasp.org @fay.ns.cloudflare.com.
+;; global options: +cmd
+; Transfer failed.
