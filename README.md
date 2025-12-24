@@ -114,7 +114,7 @@ ReconX includes a dedicated **Bug Bounty Mode** that:
 
 ## 📁 Output Structure
 
-```text
+``text
 output/<target>/
 ├── passive/
 ├── dns/
@@ -182,7 +182,7 @@ built for **penetration testers, bug bounty hunters, and security researchers**.
 
 ---
 
-****### 📦 Installation
+****### 📦 **Installation**
 ****
 ```bash
 git clone https://github.com/<your-username>/ReconX.git
@@ -193,6 +193,7 @@ chmod +x install.sh
 **### Usage**
 reconx -t example.com --full
 
+``text
 **### Modules**
 --passive     Passive recon
 --dns         DNS recon
