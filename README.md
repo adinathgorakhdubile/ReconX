@@ -123,7 +123,8 @@ output/<target>/
 ├── web/
 ├── vuln/
 └── report.md
-📦 Installation
+
+## 📦 Installation
 bash
 Copy code
 git clone https://github.com/<your-username>/ReconX.git
@@ -139,7 +140,11 @@ reconx -t example.com --full
 bash
 Copy code
 reconx -t <target> --full
-Available Modules
+
+
+
+
+## Available Modules
 bash
 Copy code
 --passive     Passive reconnaissance (OSINT)
@@ -150,10 +155,64 @@ Copy code
 --report      Generate Markdown report
 --full        Run full pipeline
 --bb          Bug bounty safe mode
-⚠️ Legal Disclaimer
+
+
+## ⚠️ Legal Disclaimer
 ReconX is intended only for authorized security testing and educational purposes.
 The author assumes no liability for misuse or unauthorized activity.
+# ReconX 🔍
+### Unified Reconnaissance Framework (CLI)
 
-👨‍💻 Author
-Adinath Dubile
+ReconX is a **modular, intelligent, terminal-based reconnaissance framework**
+built for **penetration testers, bug bounty hunters, and security researchers**.
+
+---
+
+****### 🚀 Features
+****
+- Passive Recon (OSINT, Subdomains, Certificates)
+- DNS Recon (NS, MX, TXT, AXFR)
+- Active Recon (Smart Nmap)
+- Smart Enumeration (Service-aware)
+- Web Recon & Fuzzing
+- Vulnerability Discovery (Nuclei)
+- Bug Bounty Safe Mode
+- Parallel Execution
+- Markdown Reporting
+
+---
+
+****### 📦 Installation
+****
+```bash
+git clone https://github.com/<your-username>/ReconX.git
+cd ReconX
+chmod +x install.sh
+./install.sh
+
+**### Usage**
+reconx -t example.com --full
+
+**### Modules**
+--passive     Passive recon
+--dns         DNS recon
+--active      Active recon
+--enum        Smart enumeration
+--vuln        Vulnerability discovery
+--report      Generate report
+--full        Run all modules
+--bb          Bug bounty mode
+
+**### 📁**** Output Structure
+******output/<target>/
+├── passive/
+├── dns/
+├── active/
+├── enum/
+├── web/
+├── vuln/
+└── report.md
+
+****#👨‍💻 Author
+****Adinath Dubile
 Cyber Security | Penetration Testing | Security Tool Development
