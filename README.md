@@ -24,7 +24,7 @@ It automates the **entire reconnaissance lifecycle** — from passive OSINT to v
 
 ReconX is built to streamline and automate reconnaissance workflows commonly used in **penetration testing and bug bounty engagements**.
 
-Rather than acting as a simple wrapper around existing tools, ReconX implements **service-aware logic**, **parallel execution**, and **mode-based behavior** to closely mirror real-world offensive security methodology.
+Rather than acting as a simple wrapper around existing tools, ReconX implements **service-aware logic**, **parallel execution**, and **mode-based behavior** to closely mirror real-world offensive security practices.
 
 ---
 
@@ -33,7 +33,7 @@ Rather than acting as a simple wrapper around existing tools, ReconX implements 
 ### 🛰️ Passive Reconnaissance (OSINT)
 - WHOIS intelligence gathering
 - Subdomain enumeration
-- Certificate Transparency (crt.sh)
+- Certificate Transparency (crt.sh) monitoring
 - Zero interaction with target infrastructure
 
 ### 🌐 DNS Reconnaissance
@@ -44,7 +44,7 @@ Rather than acting as a simple wrapper around existing tools, ReconX implements 
 ### ⚡ Active Reconnaissance
 - Smart Nmap scanning (two-phase strategy)
 - Port discovery followed by service and version detection
-- Bug bounty–safe scanning behavior
+- Bug bounty–safe scanning behavior (configurable)
 
 ### 🧠 Smart Enumeration Engine
 ReconX automatically detects running services and triggers only relevant enumeration tasks:
@@ -57,16 +57,16 @@ This minimizes unnecessary scans and reduces noise.
 ### 🌍 Web Reconnaissance
 - Live host detection
 - Technology fingerprinting
-- Directory and endpoint fuzzing
+- Directory and endpoint fuzzing (ffuf)
 - Controlled request rates
 
 ### 💣 Vulnerability Discovery
-- Integrated **Nuclei** vulnerability scanning
+- Integrated Nuclei vulnerability scanning
 - Severity-based filtering (High / Critical)
 - Machine-readable JSON output
 
 ### 🧾 Reporting Engine
-- Auto-generated **Markdown penetration testing report**
+- Auto-generated Markdown penetration testing report
 - Aggregates reconnaissance and vulnerability findings
 - Ready for bug bounty submissions or security assessments
 
@@ -79,6 +79,8 @@ ReconX includes a dedicated **Bug Bounty Mode** designed to:
 - Reduce request rates
 - Focus on web-safe assets
 - Help prevent scope violations
+
+Use `--bb` or `--bug-bounty` to enable the mode.
 
 ---
 
@@ -101,7 +103,7 @@ ReconX includes a dedicated **Bug Bounty Mode** designed to:
 
 ### Security Tools
 - Nmap
-- Subfinder
+- subfinder
 - Amass
 - httpx
 - ffuf
@@ -122,55 +124,80 @@ ReconX includes a dedicated **Bug Bounty Mode** designed to:
 
 ## 📁 Output Structure
 
+The tool writes results to a per-target output directory. Example structure:
+
 ```text
 output/<target>/
-├── passive/
-├── dns/
-├── active/
-├── enum/
-├── web/
-├── vuln/
-└── report.md
-📦 Installation
+├── passive/        # OSINT & passive enumeration (whois, crt.sh, subdomains)
+├── dns/            # DNS enumeration & records
+├── active/         # Nmap scans and port/service discovery
+├── enum/           # Service-specific enumeration results
+├── web/            # Web reconnaissance (httpx, ffuf, tech fingerprinting)
+├── vuln/           # Vulnerability scan outputs (nuclei JSON, etc.)
+└── report.md       # Generated Markdown report summarizing findings
+```
+
+---
+
+## 📦 Installation
+
 Clone the repository and install ReconX using the built-in installer:
 
-bash
-Copy code
-git clone https://github.com/<your-username>/ReconX.git
+```bash
+git clone https://github.com/adinathgorakhdubile/ReconX.git
 cd ReconX
 chmod +x install.sh
 ./install.sh
-Once installed, ReconX can be executed globally from anywhere in the terminal:
+```
 
-bash
-Copy code
-reconx -t example.com --full
-📌 Usage
+After installation, ReconX should be available globally as `reconx` (if the installer created a global link).
+
+---
+
+## 📌 Usage
+
 Run the full reconnaissance pipeline against a target:
 
-bash
-Copy code
+```bash
+# Run full pipeline
+reconx -t example.com --full
+
+# Or
 reconx -t <target> --full
-Available Modules
-text
-Copy code
+```
+
+Available modules (flags):
+
+```text
 --passive     Passive reconnaissance (OSINT)
 --dns         DNS reconnaissance
 --active      Active reconnaissance (Nmap)
 --enum        Smart service enumeration
---vuln        Vulnerability discovery
+--vuln        Vulnerability discovery (Nuclei)
 --report      Generate Markdown report
---full        Run full pipeline
---bb          Bug bounty safe mode
-⚠️ Legal Disclaimer
-ReconX is intended only for authorized security testing and educational purposes.
-The author assumes no liability for misuse or unauthorized activity.
+--full        Run full pipeline (all modules)
+--bb          Bug bounty safe mode (reduced aggressiveness)
+```
 
-👨‍💻 Author
-Adinath Dubile
+You can combine flags to run specific modules, for example:
+
+```bash
+reconx -t example.com --passive --dns --report
+```
+
+---
+
+## ⚠️ Legal Disclaimer
+
+ReconX is intended only for authorized security testing and educational purposes. You must have explicit permission to test any target. The author assumes no liability for misuse or unauthorized activity.
+
+---
+
+## 👨‍💻 Author
+
+Adinath Dubile  
 Cyber Security • Penetration Testing • Security Tool Development
 
 <div align="center">
 ⭐ If ReconX helped you, consider starring the repository ⭐
-
-</div> ```
+</div>
