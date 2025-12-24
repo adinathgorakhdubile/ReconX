@@ -1,29 +1,37 @@
-# ReconX 🔐  
-### Unified Reconnaissance Framework for Penetration Testing & Bug Bounty
+<div align="center">
 
-ReconX is a **Linux-based, terminal-driven reconnaissance and vulnerability assessment framework** designed for **penetration testers, bug bounty hunters, and offensive security professionals**.
+# 🔐 ReconX  
+### Unified Reconnaissance Framework (CLI)
 
-It automates the **entire reconnaissance lifecycle** — from passive OSINT to vulnerability discovery — using a **modular, service-aware, and performance-optimized approach**, closely aligned with real-world pentesting methodologies.
+**Linux-based • Modular • Intelligent • Bug Bounty Safe**
 
----
+ReconX is a **terminal-driven reconnaissance and vulnerability assessment framework** designed for **penetration testers, bug bounty hunters, and offensive security professionals**.
 
-## 🚀 Why ReconX?
-
-ReconX is built to solve common problems in reconnaissance:
-- Tool sprawl
-- Manual decision-making
-- Inefficient scan workflows
-- Poor reporting
-- Unsafe bug bounty practices
-
-Unlike simple wrapper scripts, ReconX applies **intelligent execution logic**, **parallel processing**, and **mode-based behavior** to deliver fast, accurate, and legally safe results.
+It automates the **entire reconnaissance lifecycle** — from passive OSINT to vulnerability discovery — using a **service-aware, performance-optimized, and legally safe approach**.
 
 ---
 
-## 🔍 Core Features
+![Platform](https://img.shields.io/badge/Platform-Linux-blue?style=flat-square)
+![Language](https://img.shields.io/badge/Language-Bash-lightgrey?style=flat-square)
+![Domain](https://img.shields.io/badge/Domain-Offensive%20Security-red?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Stable-green?style=flat-square)
+
+</div>
+
+---
+
+## 🧠 Overview
+
+ReconX is built to streamline and automate reconnaissance workflows commonly used in **penetration testing and bug bounty engagements**.
+
+Rather than acting as a simple wrapper around existing tools, ReconX implements **service-aware logic**, **parallel execution**, and **mode-based behavior** to closely mirror real-world offensive security methodology.
+
+---
+
+## 🚀 Core Features
 
 ### 🛰️ Passive Reconnaissance (OSINT)
-- WHOIS analysis
+- WHOIS intelligence gathering
 - Subdomain enumeration
 - Certificate Transparency (crt.sh)
 - Zero interaction with target infrastructure
@@ -31,26 +39,26 @@ Unlike simple wrapper scripts, ReconX applies **intelligent execution logic**, *
 ### 🌐 DNS Reconnaissance
 - NS, MX, TXT, A, AAAA record enumeration
 - Zone transfer (AXFR) testing
-- Parallelized DNS queries for speed
+- Parallelized DNS queries for improved performance
 
 ### ⚡ Active Reconnaissance
-- Smart Nmap scanning (two-phase approach)
-- Port discovery followed by service & version detection
+- Smart Nmap scanning (two-phase strategy)
+- Port discovery followed by service and version detection
 - Bug bounty–safe scanning behavior
 
 ### 🧠 Smart Enumeration Engine
-- Automatically detects running services
-- Triggers service-specific enumeration:
-  - HTTP / HTTPS → Web recon
-  - SMB → enum4linux
-  - FTP / SSH → Banner grabbing
-- Eliminates unnecessary scans
+ReconX automatically detects running services and triggers only relevant enumeration tasks:
+- HTTP / HTTPS → Web reconnaissance
+- SMB → enum4linux
+- FTP / SSH → Banner grabbing
+
+This minimizes unnecessary scans and reduces noise.
 
 ### 🌍 Web Reconnaissance
 - Live host detection
 - Technology fingerprinting
 - Directory and endpoint fuzzing
-- Noise-controlled execution
+- Controlled request rates
 
 ### 💣 Vulnerability Discovery
 - Integrated **Nuclei** vulnerability scanning
@@ -59,18 +67,18 @@ Unlike simple wrapper scripts, ReconX applies **intelligent execution logic**, *
 
 ### 🧾 Reporting Engine
 - Auto-generated **Markdown penetration testing report**
-- Consolidates recon and vulnerability findings
-- Suitable for bug bounty submissions and assessments
+- Aggregates reconnaissance and vulnerability findings
+- Ready for bug bounty submissions or security assessments
 
 ---
 
 ## 🛡️ Bug Bounty Safe Mode
 
-ReconX includes a dedicated **Bug Bounty Mode** that:
-- Limits scan aggressiveness
-- Reduces request rates
-- Focuses on web-safe assets
-- Helps prevent scope violations
+ReconX includes a dedicated **Bug Bounty Mode** designed to:
+- Limit scan aggressiveness
+- Reduce request rates
+- Focus on web-safe assets
+- Help prevent scope violations
 
 ---
 
@@ -79,7 +87,7 @@ ReconX includes a dedicated **Bug Bounty Mode** that:
 - Pure **Bash / Shell-based CLI**
 - Modular, production-style architecture
 - Parallel execution for performance optimization
-- Fault-tolerant (handles missing tools gracefully)
+- Fault-tolerant (gracefully skips missing tools)
 - No sudo dependency for most modules
 - Installer with global CLI access
 
@@ -87,11 +95,11 @@ ReconX includes a dedicated **Bug Bounty Mode** that:
 
 ## 🧰 Tools & Technologies
 
-**Languages & Scripting**
+### Languages & Scripting
 - Bash / Shell
 - Linux CLI
 
-**Security Tools**
+### Security Tools
 - Nmap
 - Subfinder
 - Amass
@@ -101,7 +109,7 @@ ReconX includes a dedicated **Bug Bounty Mode** that:
 - enum4linux
 - dig, whois
 
-**Security Domains**
+### Security Domains
 - Penetration Testing
 - Reconnaissance & Enumeration
 - Web Application Security
@@ -114,7 +122,7 @@ ReconX includes a dedicated **Bug Bounty Mode** that:
 
 ## 📁 Output Structure
 
-``text
+```text
 output/<target>/
 ├── passive/
 ├── dns/
@@ -123,29 +131,28 @@ output/<target>/
 ├── web/
 ├── vuln/
 └── report.md
+📦 Installation
+Clone the repository and install ReconX using the built-in installer:
 
-## 📦 Installation
 bash
 Copy code
 git clone https://github.com/<your-username>/ReconX.git
 cd ReconX
 chmod +x install.sh
 ./install.sh
-Run from anywhere:
+Once installed, ReconX can be executed globally from anywhere in the terminal:
 
 bash
 Copy code
 reconx -t example.com --full
 📌 Usage
+Run the full reconnaissance pipeline against a target:
+
 bash
 Copy code
 reconx -t <target> --full
-
-
-
-
-## Available Modules
-bash
+Available Modules
+text
 Copy code
 --passive     Passive reconnaissance (OSINT)
 --dns         DNS reconnaissance
@@ -155,65 +162,15 @@ Copy code
 --report      Generate Markdown report
 --full        Run full pipeline
 --bb          Bug bounty safe mode
-
-
-## ⚠️ Legal Disclaimer
+⚠️ Legal Disclaimer
 ReconX is intended only for authorized security testing and educational purposes.
 The author assumes no liability for misuse or unauthorized activity.
-# ReconX 🔍
-### Unified Reconnaissance Framework (CLI)
 
-ReconX is a **modular, intelligent, terminal-based reconnaissance framework**
-built for **penetration testers, bug bounty hunters, and security researchers**.
+👨‍💻 Author
+Adinath Dubile
+Cyber Security • Penetration Testing • Security Tool Development
 
----
+<div align="center">
+⭐ If ReconX helped you, consider starring the repository ⭐
 
-****### 🚀 Features
-****
-- Passive Recon (OSINT, Subdomains, Certificates)
-- DNS Recon (NS, MX, TXT, AXFR)
-- Active Recon (Smart Nmap)
-- Smart Enumeration (Service-aware)
-- Web Recon & Fuzzing
-- Vulnerability Discovery (Nuclei)
-- Bug Bounty Safe Mode
-- Parallel Execution
-- Markdown Reporting
-
----
-
-****### 📦 **Installation**
-****
-```bash
-git clone https://github.com/<your-username>/ReconX.git
-cd ReconX
-chmod +x install.sh
-./install.sh
-
-**### Usage**
-reconx -t example.com --full
-
-``text
-**### Modules**
---passive     Passive recon
---dns         DNS recon
---active      Active recon
---enum        Smart enumeration
---vuln        Vulnerability discovery
---report      Generate report
---full        Run all modules
---bb          Bug bounty mode
-
-**### 📁**** Output Structure
-******output/<target>/
-├── passive/
-├── dns/
-├── active/
-├── enum/
-├── web/
-├── vuln/
-└── report.md
-
-****#👨‍💻 Author
-****Adinath Dubile
-Cyber Security | Penetration Testing | Security Tool Development
+</div> ```
